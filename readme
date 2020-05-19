@@ -1,0 +1,29 @@
+1.spider_obook.py
+从https://obook.cc抓取索引页
+有三种方式
+第一种是抓取全部索引，首次执行时用这种方式。首次执行完，会在out目录生成各个索引页txt文件。
+	main中调用get_all_page()函数
+	
+第二种方式，作为第一种的补充。例如，全部获取时由于网络等原因，部分页面索引未能获取
+	main中调用get_deletion_page()函数
+第三种方式，当obook发布新书时，获取增量图书。参数传入页数
+	miain中调用get_especial_page()函数
+	python spider_obook.py 2
+	
+2.parse.py
+解析从obook抓取的索引页，每一页20本书。
+每本书提取有用信息生成字典dict类型数据，20本放在一个list中，转字符串后存入txt文件
+两种方式
+一种是解析全部索引页，用在首次执行时。
+另一种是解析指定文件，同时指定输出文件。
+
+也可以每次抓取增量图书时，删除out下文件
+python parse.py obookxxx.txt
+
+3.data_load.py
+把解析的索引图书，存入数据库。
+传入参数索引文件。
+
+4.get_one_book_page.py
+按照索引，从网站https://obook.cc/thread-xx.html抓取图书详细信息，比如简介、网盘地址、提取码等，然后再存入数据库。
+传入参数start_index、end_index

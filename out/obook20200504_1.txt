@@ -1,0 +1,1388 @@
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	
+		
+	
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+		<meta name="keywords" content="Kindle下载,畅销书下载,epub下载,mobi下载,pdf下载,书单推荐,电子书推荐,编程电子书,免费下载,电子书免费下载,mobi,epub,azw3" />
+	
+	<meta name="description" content="Kindle下载,畅销书下载,epub下载,mobi下载,pdf下载,书单推荐,电子书推荐,编程电子书,免费下载,电子书免费下载,mobi,epub,azw3分享站" />
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" >
+	<meta http-equiv="Cache-Control" content="no-transform"/>
+	<meta http-equiv="Cache-Control" content="no-siteapp"/>
+	
+<!-- 微博图床临时解决方案 -->
+	<meta name="referrer" content="no-referrer">
+	<title>偶书 - 偶遇小驻，发现好书</title>
+	
+	
+	
+	<link rel="shortcut icon" href="view/img/favicon.ico" />
+	<link rel="icon" sizes="32x32" href="view/img/favicon.ico">
+	<link rel="Bookmark" href="view/img/favicon.ico" />
+	
+	<style>
+table.nav_tag_list {margin-bottom: 0.2rem;}
+table.nav_tag_list td {padding: 0.3rem;}
+table.nav_tag_list td a{margin-right: 0.2rem;}
+.nav_tag_list .active {font-weight: normal}
+.tag_option {
+        border: 1px solid #eaeaea; padding: 1px 5px; border-radius: 0.25rem; text-decoration: none;font-weight: 800;
+}
+.tag_option:active, .tag_option.active {
+          text-decoration: none;
+}
+</style>
+		<link rel="stylesheet" href="view/css/bootstrap.css?1.0">
+	
+	
+	
+		<link rel="stylesheet" href="view/css/bootstrap-bbs.css?1.0">
+	<link rel="stylesheet" href="plugin/huux_notice/view/css/huux-notice.css" name="huux_notice">
+	
+	<style type="text/css" data-model="huux_hlight">.huux_thread_hlight_style1{color: #D9534D;font-weight:normal}.huux_thread_hlight_style2{color: #F0AD4E;font-weight:normal}.huux_thread_hlight_style3{color: #5BC0DE;font-weight:normal}.huux_thread_hlight_style4{color: #5CB85C;font-weight:normal}.huux_thread_hlight_style5{color: #337AB7;font-weight:normal}</style><link rel="stylesheet" type="text/css" href="plugin/ob_appdock/css/style.css" />
+
+
+
+<link rel="stylesheet" href="plugin/ob_hot_theme/css/style.css">
+
+	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="index-0.htm?rss=1" />
+	<link rel="alternate" type="application/rdf+xml" title="RSS 1.0" href="index-0.htm?rss=1" />
+<link rel="stylesheet" href="plugin/ob_tag/css/tag.css" type="text/css" />
+
+
+<link rel="stylesheet" href="plugin/ob_theme/view/css/style.css" type="text/css" />
+<link rel="stylesheet" type="text/css" href="plugin/ob_theme/view/css/head-user.css" type="text/css" />
+
+
+
+
+	
+</head>
+
+<body>
+	
+	<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+	
+	<!-- 
+		轻论坛导航：默认头部
+		Bootstrap 4.0 推荐的 PC/Mobile 公共写法 
+		优点：公用性强
+		缺点：结构稍微有点复杂
+	-->
+
+
+<header class="navbar d-none d-lg-block navbar-expand-lg navbar-dark bg-dark" id="header">
+
+	<div class="container">
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav" aria-controls="navbar_collapse" aria-expanded="false" aria-label="展开菜单">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		
+
+		<a class="navbar-brand text-truncate" href=".">
+		<a class="navbar-brand text-truncate" href="./">
+			<img src="view/img/logo.png" class="logo-2">
+					</a>
+
+		
+
+					<a class="navbar-brand hidden-lg" href="thread-create-0.htm" aria-label="发表主题"><i class="icon-edit icon"></i></a>
+		
+		
+
+		<div class="collapse navbar-collapse" id="nav">
+			<!-- 左侧：版块 -->
+			<ul class="navbar-nav mr-auto">
+				
+				<!-- 首页不显示 -->
+				<li class="nav-item home" fid="0" data-active="fid-0"><a class="nav-link" href="."><i class="icon-home d-md-none"></i> 首页</a></li>
+				
+									
+					<li class="nav-item" fid="10" data-active="fid-10">
+						<a class="nav-link" href="forum-10.htm"><i class="icon-circle-o d-md-none"></i> 每日新更</a>
+					</li>
+					
+									
+					<li class="nav-item" fid="1" data-active="fid-1">
+						<a class="nav-link" href="forum-1.htm"><i class="icon-circle-o d-md-none"></i> 电子书下载</a>
+					</li>
+					
+									
+					<li class="nav-item" fid="4" data-active="fid-4">
+						<a class="nav-link" href="forum-4.htm"><i class="icon-circle-o d-md-none"></i> 书单荐读</a>
+					</li>
+					
+									
+					<li class="nav-item" fid="9" data-active="fid-9">
+						<a class="nav-link" href="forum-9.htm"><i class="icon-circle-o d-md-none"></i> 书友分享</a>
+					</li>
+					
+									
+					<li class="nav-item" fid="2" data-active="fid-2">
+						<a class="nav-link" href="forum-2.htm"><i class="icon-circle-o d-md-none"></i> 书友交流</a>
+					</li>
+					
+								
+			</ul>
+			<!-- 右侧：用户 -->
+			<ul class="navbar-nav">
+					<!-- 站内信不显示 -->
+					<!--{hook- header_nav_user_start.htm}-->
+									<li class="nav-item username">
+						<div class="UserInfo public-DropMenu is-hover">
+							<a class="nav-link" href="my.htm" >
+								<img  class="avatar-1" src="view/img/avatar.png">
+								
+							</a>
+							<b class=""></b>
+							<!-- <span class="d-none unread badge badge-danger badge-pill" id="nav-usernotice-unread-notices">0</span> -->
+							<div class="Header-UserPane public-DropMenu-drop"><i></i>
+								<div class="public-DropMenu-drop-main"><i></i>
+									<div class="Header-UserPane-top">
+										<div class="User">
+											<div class="User-avatarWrap"><a class="User-avatar" href="my.htm" >
+													<div  style="width: 100%;">
+														<div class="Avatar is-circle"><img class="Avatar-img" src="view/img/avatar.png" alt=""></div>
+													</div>
+												</a></div>
+											<div class="User-nickname"><span>shandong115</span></div>
+											<div class="Authentication"><span>一级用户组</span></div>
+																					</div>
+									</div>
+									<div class="Shortcut">
+										<ul class="Shortcut-list">
+											<li class="Shortcut-listItem" data-index="0"><a class="Shortcut-listItem-link" href="my.htm" ><i class="is-center"></i>
+													<p>个人中心</p>
+												</a></li>
+											<li class="Shortcut-listItem" data-index="1"><a class="Shortcut-listItem-link" href="my-favorite.htm" ><i class="is-attention"></i>
+													<p>我的收藏</p>
+												</a></li>
+											<li class="Shortcut-listItem" data-index="2"><a class="Shortcut-listItem-link" href="my-notice.htm" ><i class="is-message"></i>
+													<p>站内信<span class="d-none  badge badge-danger badge-pill" id="nav-usernotice-unread-notices">0</span></p>
+												</a></li>
+										</ul>
+									</div>
+																		<div class="Exit"><a class="Exit-btn" href="user-logout.htm" ><i></i>登出</a></div>
+								</div>
+							</div>
+						</div>
+					</li>
+
+
+					
+
+								<link rel="stylesheet" href="plugin/ob_google/view/css/style.css" type="text/css" />
+<link rel="stylesheet" href="plugin/ob_iad/view/css/style.css" type="text/css" />
+
+			</ul>
+		</div>
+	</div>
+	
+</header>
+<div class="bg-ne d-none d-lg-block">
+<div class="bg-obook"></div>
+	<div class="bg-obook2"></div>
+
+</div>
+
+
+	<main id="body">
+		<div class="container">
+	
+		
+
+
+
+
+<div class="row">
+	<div class="col-lg-9 main">
+							<ol class="breadcrumb ">
+				<li class="breadcrumb-item"><i class="icon-volume-down" aria-hidden="true"></i></li>
+				<li class="breadcrumb-item active">
+				<a target="_blank" href="thread-15045.htm">【公告】由于百度网盘整顿，站内大部分资源失效！</a>
+				
+				</li>
+				
+			</ol>
+				<div class="card card-threadlist">
+			<div class="card-header">
+				<ul class="nav nav-tabs card-header-tabs">
+					<li class="nav-item">
+						<a class="nav-link active" href="./index.htm">最新</a>
+					</li>
+					
+				</ul>
+			</div>
+			<div class="card-body">
+				<ul class="list-unstyled threadlist mb-0">
+										
+															<li class="media thread tap  " data-href="thread-15091.htm" data-tid="15091">
+										<!-- 取1张图片 -->
+																<a href="thread-15091.htm" tabindex="-1" class="ml-1 mt-1 mr-3">
+							<img class="list-image-index" src="https://images-cn.ssl-images-amazon.com/images/I/41QH1NJALEL.jpg">
+						</a>
+										
+					<div class="media-body">
+						<div class="ob-list-subject break-all">
+							    <a href="forum-10.htm" class="text-grey">[每日新更]</a>
+    
+														
+							<!--{hook-bk thread_list_inc_subject_before.htm}-->
+							<a href="thread-15091.htm">奇异植物博物馆（共3册：《种子的信仰》《一棵花旗松的生命之旅》《生命之美：奇异植物的生存智慧》）（epub+mobi+azw3）</a>
+							
+							
+																					
+														
+						</div>
+						<div class="d-flex justify-content-between small mt-1">
+							<div>
+								
+								
+								
+																        <a href="forum-10.htm?tagids=116" class="badge badge-pill badge-danger">合集</a>
+        <a href="forum-10.htm?tagids=107" class="badge badge-pill badge-secondary">科普</a>
+							</div>
+							<div class="text-muted small">
+								<span class="m-r-1"><i class="icon-eye" aria-hidden="true"></i> 366</span>
+								<span class="ml-2 d-none"><i class="icon-eye"></i> 366</span>
+								
+								
+								<span class="ml-2"><i class="icon-comment-o"></i> 0</span>
+															</div>
+						</div>
+					</div>
+				</li>
+									<li class="media thread tap  " data-href="thread-15090.htm" data-tid="15090">
+										<!-- 取1张图片 -->
+																<a href="thread-15090.htm" tabindex="-1" class="ml-1 mt-1 mr-3">
+							<img class="list-image-index" src="https://images-cn.ssl-images-amazon.com/images/I/511G66+EmvL.jpg">
+						</a>
+										
+					<div class="media-body">
+						<div class="ob-list-subject break-all">
+							    <a href="forum-10.htm" class="text-grey">[每日新更]</a>
+    
+														
+							<!--{hook-bk thread_list_inc_subject_before.htm}-->
+							<a href="thread-15090.htm">摩登爱情（套装3册）（epub+mobi+azw3）</a>
+							
+							
+																					
+														
+						</div>
+						<div class="d-flex justify-content-between small mt-1">
+							<div>
+								
+								
+								
+																        <a href="forum-10.htm?tagids=116" class="badge badge-pill badge-danger">合集</a>
+        <a href="forum-10.htm?tagids=112" class="badge badge-pill badge-secondary">小说</a>
+        <a href="forum-10.htm?tagids=119" class="badge badge-pill badge-secondary">婚恋</a>
+							</div>
+							<div class="text-muted small">
+								<span class="m-r-1"><i class="icon-eye" aria-hidden="true"></i> 264</span>
+								<span class="ml-2 d-none"><i class="icon-eye"></i> 264</span>
+								
+								
+								<span class="ml-2"><i class="icon-comment-o"></i> 0</span>
+															</div>
+						</div>
+					</div>
+				</li>
+									<li class="media thread tap  " data-href="thread-15089.htm" data-tid="15089">
+										<!-- 取1张图片 -->
+																<a href="thread-15089.htm" tabindex="-1" class="ml-1 mt-1 mr-3">
+							<img class="list-image-index" src="https://img9.doubanio.com/view/subject/s/public/s28060805.jpg">
+						</a>
+										
+					<div class="media-body">
+						<div class="ob-list-subject break-all">
+							    <a href="forum-10.htm" class="text-grey">[每日新更]</a>
+    
+														
+							<!--{hook-bk thread_list_inc_subject_before.htm}-->
+							<a href="thread-15089.htm">古画里的中国生活 -   孟晖（epub+mobi+azw3）</a>
+							
+							
+																					
+														
+						</div>
+						<div class="d-flex justify-content-between small mt-1">
+							<div>
+								
+								
+								
+																        <a href="forum-10.htm?tagids=106" class="badge badge-pill badge-secondary">艺术</a>
+        <a href="forum-10.htm?tagids=105" class="badge badge-pill badge-secondary">文化</a>
+        <a href="forum-10.htm?tagids=103" class="badge badge-pill badge-secondary">历史</a>
+							</div>
+							<div class="text-muted small">
+								<span class="m-r-1"><i class="icon-eye" aria-hidden="true"></i> 280</span>
+								<span class="ml-2 d-none"><i class="icon-eye"></i> 280</span>
+								
+								
+								<span class="ml-2"><i class="icon-comment-o"></i> 0</span>
+															</div>
+						</div>
+					</div>
+				</li>
+									<li class="media thread tap  " data-href="thread-15088.htm" data-tid="15088">
+										<!-- 取1张图片 -->
+																<a href="thread-15088.htm" tabindex="-1" class="ml-1 mt-1 mr-3">
+							<img class="list-image-index" src="https://img3.doubanio.com/view/subject/s/public/s33473891.jpg">
+						</a>
+										
+					<div class="media-body">
+						<div class="ob-list-subject break-all">
+							    <a href="forum-10.htm" class="text-grey">[每日新更]</a>
+    
+														
+							<!--{hook-bk thread_list_inc_subject_before.htm}-->
+							<a href="thread-15088.htm">走出中世纪 - 朱维铮（epub+mobi+azw3）</a>
+							
+							
+																					
+														
+						</div>
+						<div class="d-flex justify-content-between small mt-1">
+							<div>
+								
+								
+								
+																        <a href="forum-10.htm?tagids=103" class="badge badge-pill badge-secondary">历史</a>
+							</div>
+							<div class="text-muted small">
+								<span class="m-r-1"><i class="icon-eye" aria-hidden="true"></i> 194</span>
+								<span class="ml-2 d-none"><i class="icon-eye"></i> 194</span>
+								
+								
+								<span class="ml-2"><i class="icon-comment-o"></i> 0</span>
+															</div>
+						</div>
+					</div>
+				</li>
+									<li class="media thread tap  " data-href="thread-15087.htm" data-tid="15087">
+										<!-- 取1张图片 -->
+																<a href="thread-15087.htm" tabindex="-1" class="ml-1 mt-1 mr-3">
+							<img class="list-image-index" src="https://images-cn.ssl-images-amazon.com/images/I/51gcyXF7BVL.jpg">
+						</a>
+										
+					<div class="media-body">
+						<div class="ob-list-subject break-all">
+							    <a href="forum-10.htm" class="text-grey">[每日新更]</a>
+    
+														
+							<!--{hook-bk thread_list_inc_subject_before.htm}-->
+							<a href="thread-15087.htm">苏富比的早餐：职业拍卖大师写给你的艺术启蒙A-Z - 菲利普•胡克（Philip Hook）（epub+mobi+azw3）</a>
+							
+							
+																					
+														
+						</div>
+						<div class="d-flex justify-content-between small mt-1">
+							<div>
+								
+								
+								
+																        <a href="forum-10.htm?tagids=106" class="badge badge-pill badge-secondary">艺术</a>
+							</div>
+							<div class="text-muted small">
+								<span class="m-r-1"><i class="icon-eye" aria-hidden="true"></i> 171</span>
+								<span class="ml-2 d-none"><i class="icon-eye"></i> 171</span>
+								
+								
+								<span class="ml-2"><i class="icon-comment-o"></i> 1</span>
+															</div>
+						</div>
+					</div>
+				</li>
+									<li class="media thread tap  " data-href="thread-15086.htm" data-tid="15086">
+										<!-- 取1张图片 -->
+																<a href="thread-15086.htm" tabindex="-1" class="ml-1 mt-1 mr-3">
+							<img class="list-image-index" src="https://img3.doubanio.com/view/subject/s/public/s33561991.jpg">
+						</a>
+										
+					<div class="media-body">
+						<div class="ob-list-subject break-all">
+							    <a href="forum-10.htm" class="text-grey">[每日新更]</a>
+    
+														
+							<!--{hook-bk thread_list_inc_subject_before.htm}-->
+							<a href="thread-15086.htm">为爱成婚：婚姻与爱情的前世今生 - ［美］斯蒂芬妮·孔茨（epub+mobi+azw3）</a>
+							
+							
+																					
+														
+						</div>
+						<div class="d-flex justify-content-between small mt-1">
+							<div>
+								
+								
+								
+																        <a href="forum-10.htm?tagids=119" class="badge badge-pill badge-secondary">婚恋</a>
+							</div>
+							<div class="text-muted small">
+								<span class="m-r-1"><i class="icon-eye" aria-hidden="true"></i> 118</span>
+								<span class="ml-2 d-none"><i class="icon-eye"></i> 118</span>
+								
+								
+								<span class="ml-2"><i class="icon-comment-o"></i> 0</span>
+															</div>
+						</div>
+					</div>
+				</li>
+									<li class="media thread tap  " data-href="thread-15085.htm" data-tid="15085">
+										<!-- 取1张图片 -->
+																<a href="thread-15085.htm" tabindex="-1" class="ml-1 mt-1 mr-3">
+							<img class="list-image-index" src="https://img9.doubanio.com/view/subject/s/public/s33586854.jpg">
+						</a>
+										
+					<div class="media-body">
+						<div class="ob-list-subject break-all">
+							    <a href="forum-10.htm" class="text-grey">[每日新更]</a>
+    
+														
+							<!--{hook-bk thread_list_inc_subject_before.htm}-->
+							<a href="thread-15085.htm">学做妙人 - 蔡澜（epub+mobi+azw3）</a>
+							
+							
+																					
+														
+						</div>
+						<div class="d-flex justify-content-between small mt-1">
+							<div>
+								
+								
+								
+																        <a href="forum-10.htm?tagids=118" class="badge badge-pill badge-secondary">随笔</a>
+        <a href="forum-10.htm?tagids=115" class="badge badge-pill badge-secondary">生活</a>
+							</div>
+							<div class="text-muted small">
+								<span class="m-r-1"><i class="icon-eye" aria-hidden="true"></i> 212</span>
+								<span class="ml-2 d-none"><i class="icon-eye"></i> 212</span>
+								
+								
+								<span class="ml-2"><i class="icon-comment-o"></i> 0</span>
+															</div>
+						</div>
+					</div>
+				</li>
+									<li class="media thread tap  " data-href="thread-15084.htm" data-tid="15084">
+										<!-- 取1张图片 -->
+																<a href="thread-15084.htm" tabindex="-1" class="ml-1 mt-1 mr-3">
+							<img class="list-image-index" src="https://images-cn.ssl-images-amazon.com/images/I/516WJj+7z1L.jpg">
+						</a>
+										
+					<div class="media-body">
+						<div class="ob-list-subject break-all">
+							    <a href="forum-10.htm" class="text-grey">[每日新更]</a>
+    
+														
+							<!--{hook-bk thread_list_inc_subject_before.htm}-->
+							<a href="thread-15084.htm">魏斯曼的演讲大师课2：答的艺术 - 杰瑞·魏斯曼（epub+mobi+azw3）</a>
+							
+							
+																					
+														
+						</div>
+						<div class="d-flex justify-content-between small mt-1">
+							<div>
+								
+								
+								
+																        <a href="forum-10.htm?tagids=117" class="badge badge-pill badge-secondary">成长</a>
+							</div>
+							<div class="text-muted small">
+								<span class="m-r-1"><i class="icon-eye" aria-hidden="true"></i> 173</span>
+								<span class="ml-2 d-none"><i class="icon-eye"></i> 173</span>
+								
+								
+								<span class="ml-2"><i class="icon-comment-o"></i> 0</span>
+															</div>
+						</div>
+					</div>
+				</li>
+									<li class="media thread tap  " data-href="thread-15083.htm" data-tid="15083">
+										<!-- 取1张图片 -->
+																<a href="thread-15083.htm" tabindex="-1" class="ml-1 mt-1 mr-3">
+							<img class="list-image-index" src="https://images-cn.ssl-images-amazon.com/images/I/4106WsAOPmL.jpg">
+						</a>
+										
+					<div class="media-body">
+						<div class="ob-list-subject break-all">
+							    <a href="forum-10.htm" class="text-grey">[每日新更]</a>
+    
+														
+							<!--{hook-bk thread_list_inc_subject_before.htm}-->
+							<a href="thread-15083.htm">魏斯曼的演讲大师课1：说的艺术（2020年新版） - [美] 杰瑞·魏斯曼（Jerry Weissman（epub+mobi+azw3）</a>
+							
+							
+																					
+														
+						</div>
+						<div class="d-flex justify-content-between small mt-1">
+							<div>
+								
+								
+								
+																        <a href="forum-10.htm?tagids=117" class="badge badge-pill badge-secondary">成长</a>
+							</div>
+							<div class="text-muted small">
+								<span class="m-r-1"><i class="icon-eye" aria-hidden="true"></i> 203</span>
+								<span class="ml-2 d-none"><i class="icon-eye"></i> 203</span>
+								
+								
+								<span class="ml-2"><i class="icon-comment-o"></i> 1</span>
+															</div>
+						</div>
+					</div>
+				</li>
+									<li class="media thread tap  " data-href="thread-15082.htm" data-tid="15082">
+										<!-- 取1张图片 -->
+																<a href="thread-15082.htm" tabindex="-1" class="ml-1 mt-1 mr-3">
+							<img class="list-image-index" src="https://img1.doubanio.com/view/subject/s/public/s33623997.jpg">
+						</a>
+										
+					<div class="media-body">
+						<div class="ob-list-subject break-all">
+							    <a href="forum-10.htm" class="text-grey">[每日新更]</a>
+    
+														
+							<!--{hook-bk thread_list_inc_subject_before.htm}-->
+							<a href="thread-15082.htm">进击的心智：优化思维和明智行动的心理学新知 - 魏知超,王晓微（epub+mobi+azw3）</a>
+							
+							
+																					
+														
+						</div>
+						<div class="d-flex justify-content-between small mt-1">
+							<div>
+								
+								
+								
+																        <a href="forum-10.htm?tagids=109" class="badge badge-pill badge-secondary">心理</a>
+							</div>
+							<div class="text-muted small">
+								<span class="m-r-1"><i class="icon-eye" aria-hidden="true"></i> 164</span>
+								<span class="ml-2 d-none"><i class="icon-eye"></i> 164</span>
+								
+								
+								<span class="ml-2"><i class="icon-comment-o"></i> 0</span>
+															</div>
+						</div>
+					</div>
+				</li>
+									<li class="media thread tap  " data-href="thread-15078.htm" data-tid="15078">
+										<!-- 取1张图片 -->
+																<a href="thread-15078.htm" tabindex="-1" class="ml-1 mt-1 mr-3">
+							<img class="list-image-index" src="upload/attach/202005/2_RNTSZG8FCFT3434.jpg">
+						</a>
+										
+					<div class="media-body">
+						<div class="ob-list-subject break-all">
+							    <a href="forum-10.htm" class="text-grey">[每日新更]</a>
+    
+														
+							<!--{hook-bk thread_list_inc_subject_before.htm}-->
+							<a href="thread-15078.htm">当世界唾手可得：译文政治家系列（套装共4本:《当仁不让》《永不放弃》《朴槿惠日记》《重建的世界》）（epub+mobi+azw3）</a>
+							
+							
+																					
+														
+						</div>
+						<div class="d-flex justify-content-between small mt-1">
+							<div>
+								
+								
+								
+																        <a href="forum-10.htm?tagids=116" class="badge badge-pill badge-danger">合集</a>
+        <a href="forum-10.htm?tagids=111" class="badge badge-pill badge-secondary">传记</a>
+							</div>
+							<div class="text-muted small">
+								<span class="m-r-1"><i class="icon-eye" aria-hidden="true"></i> 412</span>
+								<span class="ml-2 d-none"><i class="icon-eye"></i> 412</span>
+								
+								
+								<span class="ml-2"><i class="icon-comment-o"></i> 0</span>
+															</div>
+						</div>
+					</div>
+				</li>
+									<li class="media thread tap  " data-href="thread-15077.htm" data-tid="15077">
+										<!-- 取1张图片 -->
+																<a href="thread-15077.htm" tabindex="-1" class="ml-1 mt-1 mr-3">
+							<img class="list-image-index" src="https://images-cn.ssl-images-amazon.com/images/I/41-GcxkO5zL.jpg">
+						</a>
+										
+					<div class="media-body">
+						<div class="ob-list-subject break-all">
+							    <a href="forum-10.htm" class="text-grey">[每日新更]</a>
+    
+														
+							<!--{hook-bk thread_list_inc_subject_before.htm}-->
+							<a href="thread-15077.htm">中国思想史系列（套装共3册） - 熊逸（epub+mobi+azw3）</a>
+							
+							
+																					
+														
+						</div>
+						<div class="d-flex justify-content-between small mt-1">
+							<div>
+								
+								
+								
+																        <a href="forum-10.htm?tagids=116" class="badge badge-pill badge-danger">合集</a>
+        <a href="forum-10.htm?tagids=102" class="badge badge-pill badge-secondary">哲学</a>
+							</div>
+							<div class="text-muted small">
+								<span class="m-r-1"><i class="icon-eye" aria-hidden="true"></i> 475</span>
+								<span class="ml-2 d-none"><i class="icon-eye"></i> 475</span>
+								
+								
+								<span class="ml-2"><i class="icon-comment-o"></i> 1</span>
+															</div>
+						</div>
+					</div>
+				</li>
+									<li class="media thread tap  " data-href="thread-15076.htm" data-tid="15076">
+										<!-- 取1张图片 -->
+																<a href="thread-15076.htm" tabindex="-1" class="ml-1 mt-1 mr-3">
+							<img class="list-image-index" src="https://img9.doubanio.com/view/subject/s/public/s29611558.jpg">
+						</a>
+										
+					<div class="media-body">
+						<div class="ob-list-subject break-all">
+							    <a href="forum-10.htm" class="text-grey">[每日新更]</a>
+    
+														
+							<!--{hook-bk thread_list_inc_subject_before.htm}-->
+							<a href="thread-15076.htm">调香师日记 - [法] 让-克罗德·艾列纳（epub+mobi+azw3）</a>
+							
+							
+																					
+														
+						</div>
+						<div class="d-flex justify-content-between small mt-1">
+							<div>
+								
+								
+								
+																        <a href="forum-10.htm?tagids=106" class="badge badge-pill badge-secondary">艺术</a>
+							</div>
+							<div class="text-muted small">
+								<span class="m-r-1"><i class="icon-eye" aria-hidden="true"></i> 279</span>
+								<span class="ml-2 d-none"><i class="icon-eye"></i> 279</span>
+								
+								
+								<span class="ml-2"><i class="icon-comment-o"></i> 0</span>
+															</div>
+						</div>
+					</div>
+				</li>
+									<li class="media thread tap  " data-href="thread-15075.htm" data-tid="15075">
+										<!-- 取1张图片 -->
+																<a href="thread-15075.htm" tabindex="-1" class="ml-1 mt-1 mr-3">
+							<img class="list-image-index" src="https://img9.doubanio.com/view/subject/s/public/s29195567.jpg">
+						</a>
+										
+					<div class="media-body">
+						<div class="ob-list-subject break-all">
+							    <a href="forum-10.htm" class="text-grey">[每日新更]</a>
+    
+														
+							<!--{hook-bk thread_list_inc_subject_before.htm}-->
+							<a href="thread-15075.htm">绘画中的日常 - 李梦（epub+mobi+azw3）</a>
+							
+							
+																					
+														
+						</div>
+						<div class="d-flex justify-content-between small mt-1">
+							<div>
+								
+								
+								
+																        <a href="forum-10.htm?tagids=106" class="badge badge-pill badge-secondary">艺术</a>
+							</div>
+							<div class="text-muted small">
+								<span class="m-r-1"><i class="icon-eye" aria-hidden="true"></i> 243</span>
+								<span class="ml-2 d-none"><i class="icon-eye"></i> 243</span>
+								
+								
+								<span class="ml-2"><i class="icon-comment-o"></i> 0</span>
+															</div>
+						</div>
+					</div>
+				</li>
+									<li class="media thread tap  " data-href="thread-15074.htm" data-tid="15074">
+										<!-- 取1张图片 -->
+																<a href="thread-15074.htm" tabindex="-1" class="ml-1 mt-1 mr-3">
+							<img class="list-image-index" src="https://img9.doubanio.com/view/subject/s/public/s29749022.jpg">
+						</a>
+										
+					<div class="media-body">
+						<div class="ob-list-subject break-all">
+							    <a href="forum-10.htm" class="text-grey">[每日新更]</a>
+    
+														
+							<!--{hook-bk thread_list_inc_subject_before.htm}-->
+							<a href="thread-15074.htm">罗马：一座城市的兴衰史 - [英]克里斯托弗·希伯特（epub+mobi+azw3）</a>
+							
+							
+																					
+														
+						</div>
+						<div class="d-flex justify-content-between small mt-1">
+							<div>
+								
+								
+								
+																        <a href="forum-10.htm?tagids=103" class="badge badge-pill badge-secondary">历史</a>
+							</div>
+							<div class="text-muted small">
+								<span class="m-r-1"><i class="icon-eye" aria-hidden="true"></i> 300</span>
+								<span class="ml-2 d-none"><i class="icon-eye"></i> 300</span>
+								
+								
+								<span class="ml-2"><i class="icon-comment-o"></i> 0</span>
+															</div>
+						</div>
+					</div>
+				</li>
+									<li class="media thread tap  " data-href="thread-15073.htm" data-tid="15073">
+										<!-- 取1张图片 -->
+																<a href="thread-15073.htm" tabindex="-1" class="ml-1 mt-1 mr-3">
+							<img class="list-image-index" src="https://img9.doubanio.com/view/subject/s/public/s29625615.jpg">
+						</a>
+										
+					<div class="media-body">
+						<div class="ob-list-subject break-all">
+							    <a href="forum-10.htm" class="text-grey">[每日新更]</a>
+    
+														
+							<!--{hook-bk thread_list_inc_subject_before.htm}-->
+							<a href="thread-15073.htm">头发：一部趣味人类史 - [美] 库尔特·斯坦恩（epub+mobi+azw3）</a>
+							
+							
+																					
+														
+						</div>
+						<div class="d-flex justify-content-between small mt-1">
+							<div>
+								
+								
+								
+																        <a href="forum-10.htm?tagids=103" class="badge badge-pill badge-secondary">历史</a>
+							</div>
+							<div class="text-muted small">
+								<span class="m-r-1"><i class="icon-eye" aria-hidden="true"></i> 262</span>
+								<span class="ml-2 d-none"><i class="icon-eye"></i> 262</span>
+								
+								
+								<span class="ml-2"><i class="icon-comment-o"></i> 1</span>
+															</div>
+						</div>
+					</div>
+				</li>
+									<li class="media thread tap  " data-href="thread-15072.htm" data-tid="15072">
+										<!-- 取1张图片 -->
+																<a href="thread-15072.htm" tabindex="-1" class="ml-1 mt-1 mr-3">
+							<img class="list-image-index" src="https://img9.doubanio.com/view/subject/s/public/s33556937.jpg">
+						</a>
+										
+					<div class="media-body">
+						<div class="ob-list-subject break-all">
+							    <a href="forum-10.htm" class="text-grey">[每日新更]</a>
+    
+														
+							<!--{hook-bk thread_list_inc_subject_before.htm}-->
+							<a href="thread-15072.htm">艺术哲学(作家榜经典文库） - [法] 丹纳 著,傅雷 译,大星文化 出品,作家榜经典文库（epub+mobi+azw3）</a>
+							
+							
+																					
+														
+						</div>
+						<div class="d-flex justify-content-between small mt-1">
+							<div>
+								
+								
+								
+																        <a href="forum-10.htm?tagids=102" class="badge badge-pill badge-secondary">哲学</a>
+        <a href="forum-10.htm?tagids=106" class="badge badge-pill badge-secondary">艺术</a>
+							</div>
+							<div class="text-muted small">
+								<span class="m-r-1"><i class="icon-eye" aria-hidden="true"></i> 248</span>
+								<span class="ml-2 d-none"><i class="icon-eye"></i> 248</span>
+								
+								
+								<span class="ml-2"><i class="icon-comment-o"></i> 1</span>
+															</div>
+						</div>
+					</div>
+				</li>
+									<li class="media thread tap  " data-href="thread-15071.htm" data-tid="15071">
+										<!-- 取1张图片 -->
+																<a href="thread-15071.htm" tabindex="-1" class="ml-1 mt-1 mr-3">
+							<img class="list-image-index" src="https://images-cn.ssl-images-amazon.com/images/I/51RC8m7fFDL.jpg">
+						</a>
+										
+					<div class="media-body">
+						<div class="ob-list-subject break-all">
+							    <a href="forum-10.htm" class="text-grey">[每日新更]</a>
+    
+														
+							<!--{hook-bk thread_list_inc_subject_before.htm}-->
+							<a href="thread-15071.htm">人人都该懂的认识论 - [加]罗伯特·马丁(Robert M.Martin)（epub+mobi+azw3）</a>
+							
+							
+																					
+														
+						</div>
+						<div class="d-flex justify-content-between small mt-1">
+							<div>
+								
+								
+								
+																        <a href="forum-10.htm?tagids=102" class="badge badge-pill badge-secondary">哲学</a>
+							</div>
+							<div class="text-muted small">
+								<span class="m-r-1"><i class="icon-eye" aria-hidden="true"></i> 318</span>
+								<span class="ml-2 d-none"><i class="icon-eye"></i> 318</span>
+								
+								
+								<span class="ml-2"><i class="icon-comment-o"></i> 0</span>
+															</div>
+						</div>
+					</div>
+				</li>
+									<li class="media thread tap  " data-href="thread-15070.htm" data-tid="15070">
+										<!-- 取1张图片 -->
+																<a href="thread-15070.htm" tabindex="-1" class="ml-1 mt-1 mr-3">
+							<img class="list-image-index" src="https://images-cn.ssl-images-amazon.com/images/I/511GvnN45kL.jpg">
+						</a>
+										
+					<div class="media-body">
+						<div class="ob-list-subject break-all">
+							    <a href="forum-10.htm" class="text-grey">[每日新更]</a>
+    
+														
+							<!--{hook-bk thread_list_inc_subject_before.htm}-->
+							<a href="thread-15070.htm">睡眠的秘密世界 - 佩内洛普·A.刘易斯 (作者), 阳曦 (译者)（epub+mobi+azw3）</a>
+							
+							
+																					
+														
+						</div>
+						<div class="d-flex justify-content-between small mt-1">
+							<div>
+								
+								
+								
+																        <a href="forum-10.htm?tagids=107" class="badge badge-pill badge-secondary">科普</a>
+							</div>
+							<div class="text-muted small">
+								<span class="m-r-1"><i class="icon-eye" aria-hidden="true"></i> 208</span>
+								<span class="ml-2 d-none"><i class="icon-eye"></i> 208</span>
+								
+								
+								<span class="ml-2"><i class="icon-comment-o"></i> 0</span>
+															</div>
+						</div>
+					</div>
+				</li>
+									<li class="media thread tap  " data-href="thread-15069.htm" data-tid="15069">
+										<!-- 取1张图片 -->
+																<a href="thread-15069.htm" tabindex="-1" class="ml-1 mt-1 mr-3">
+							<img class="list-image-index" src="https://img9.doubanio.com/view/subject/s/public/s33599779.jpg">
+						</a>
+										
+					<div class="media-body">
+						<div class="ob-list-subject break-all">
+							    <a href="forum-10.htm" class="text-grey">[每日新更]</a>
+    
+														
+							<!--{hook-bk thread_list_inc_subject_before.htm}-->
+							<a href="thread-15069.htm">成就 : 优秀管理者成就自己，卓越管理者成就他人 - 埃里克·施密特（Eric Schmidt）,乔纳森·罗森伯格（Jonathan Rosenberg）,艾伦·伊格尔（Alan Eagle）（epub+mobi+azw3）</a>
+							
+							
+																					
+														
+						</div>
+						<div class="d-flex justify-content-between small mt-1">
+							<div>
+								
+								
+								
+																        <a href="forum-10.htm?tagids=108" class="badge badge-pill badge-secondary">管理</a>
+							</div>
+							<div class="text-muted small">
+								<span class="m-r-1"><i class="icon-eye" aria-hidden="true"></i> 205</span>
+								<span class="ml-2 d-none"><i class="icon-eye"></i> 205</span>
+								
+								
+								<span class="ml-2"><i class="icon-comment-o"></i> 0</span>
+															</div>
+						</div>
+					</div>
+				</li>
+			
+					
+				</ul>
+			</div>
+		</div>
+		
+				
+		
+		<nav class="my-3"><ul class="pagination justify-content-center flex-wrap"><li class="page-item active"><a href="index-1.htm" class="page-link">1</a></li><li class="page-item"><a href="index-2.htm" class="page-link">2</a></li><li class="page-item"><a href="index-2.htm" class="page-link">下一页</a></li></ul></nav>
+		
+	</div>
+	<div class="col-lg-3 d-none d-lg-block aside">
+		
+		<div class="card card-site-info">
+			
+			<div class="m-3-top">
+				<table class="w-100 small">
+					<tr align="center">
+						<td>
+							<span class="text-muted">书架</span><br>
+							<b>13519</b>
+						</td>
+						<td>
+							<span class="text-muted">评论</span><br>
+							<b>3422</b>
+						</td>
+						<td>
+							<span class="text-muted">用户</span><br>
+							<b>60828</b>
+						</td>
+												<td>
+							<span class="text-muted">在线</span><br>
+							<b>181</b>
+						</td>
+											</tr>
+				</table>
+			</div>
+			
+		</div>
+		<div class="form-group">
+	<form action="search.htm" id="search_form">
+		<div class="input-group mb-3">
+			<input type="text" class="form-control" placeholder="关键词" name="keyword">
+			<div class="input-group-append">
+				<button class="btn btn-search icon icon-search" type="submit"></button>
+			</div>
+		</div>
+	</form>
+</div><div class="card  text-middle">
+	<div class="card-header">
+	热门榜单
+	</div>
+	<div class="card-block " style="padding: 0.5rem;">
+			<div class="hot-top"><ul class="hot-list-ul">
+											<li ><span class="top_span_red">1</span> <a href="thread-10307.htm" title="已补【系列合集】讲谈社·兴亡的世界史·台版（21本全）--epub合集+单本多格式补完">已补【系列合集】讲谈社·兴亡的世界史·台版（21本全）--epub合集+单本多格式补完</a></li>											<li ><span class="top_span_red">2</span> <a href="thread-8975.htm" title="已补 毛泽东选集（1-4官方版 + 5、6、7卷 静火版/赤旗版） - 毛泽东（epub+mobi+azw3+pdf）">已补 毛泽东选集（1-4官方版 + 5、6、7卷 静火版/赤旗版） - 毛泽东（epub+mobi+azw3+pdf）</a></li>											<li ><span class="top_span_red">3</span> <a href="thread-7684.htm" title="已补【系列合集】三联新知文库（新版1-102+5本无编号）【更新整理完毕】">已补【系列合集】三联新知文库（新版1-102+5本无编号）【更新整理完毕】</a></li>											<li ><span class="top_span_gray">4</span> <a href="thread-12627.htm" title="已补 中國・歷史的長河（1-12冊合集）【台版讲谈社中国史】（元数据修复 epub打包）">已补 中國・歷史的長河（1-12冊合集）【台版讲谈社中国史】（元数据修复 epub打包）</a></li>											<li ><span class="top_span_gray">5</span> <a href="thread-7770.htm" title="【系列合集】中华现代学术名著丛书（第一~六辑）失效已补+新补第五辑、第六辑">【系列合集】中华现代学术名著丛书（第一~六辑）失效已补+新补第五辑、第六辑</a></li>											<li ><span class="top_span_gray">6</span> <a href="thread-15045.htm" title="【公告】由于百度网盘整顿，站内大部分资源链接已经失效！">【公告】由于百度网盘整顿，站内大部分资源链接已经失效！</a></li>											<li ><span class="top_span_gray">7</span> <a href="thread-10419.htm" title="马克思恩格斯文集（1-10卷：《资本论》《反杜林论》《自然辩证法》等）- [德]卡尔·马克思,  [德]弗里德里希·恩格斯,中共中央马克思恩格斯列宁斯大林作编译局（epub+mobi+azw3）">马克思恩格斯文集（1-10卷：《资本论》《反杜林论》《自然辩证法》等）- [德]卡尔·马克思,  [德]弗里德里希·恩格斯,中共中央马克思恩格斯列宁斯大林作编译局（epub+mobi+azw3）</a></li>											<li ><span class="top_span_gray">8</span> <a href="thread-7687.htm" title="【系列合集】三联新知文库（旧版）">【系列合集】三联新知文库（旧版）</a></li>											<li ><span class="top_span_gray">9</span> <a href="thread-14875.htm" title="秋叶特训营系列（套装全3册：秋叶特训营 高效学习7堂课 秋叶特训营 时间管理7堂课 秋叶特训营 写作7堂课）（epub+mobi+azw3）">秋叶特训营系列（套装全3册：秋叶特训营 高效学习7堂课 秋叶特训营 时间管理7堂课 秋叶特训营 写作7堂课）（epub+mobi+azw3）</a></li>											<li ><span class="top_span_gray">10</span> <a href="thread-14873.htm" title="传统应该这样读系列【套装共6册：四大名著应该这样读 论语应该这样读 唐诗应该这样读 宋词应该这样读 诗经应该这样读 史记应该这样读】（epub+mobi+azw3）">传统应该这样读系列【套装共6册：四大名著应该这样读 论语应该这样读 唐诗应该这样读 宋词应该这样读 诗经应该这样读 史记应该这样读】（epub+mobi+azw3）</a></li>					
+				</ul></div>
+	</div>
+</div>
+
+<!-- <div class="card btn d-none d-lg-block"> -->
+<div style="margin-bottom: 1rem;">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 首页右侧 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-5371292727944531"
+     data-ad-slot="4502303240"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+				<div class="card friendlink">
+			<div class="card-header">友情链接</div>
+			<div class="card-body small">
+				<ul>
+										<li class="mb-1 small line-height-2">
+						<a href="http://www.zxcs.info/" target="_blank">
+							知轩藏书 - 精校网文						</a>
+					</li>
+										<li class="mb-1 small line-height-2">
+						<a href="http://ypsuperkey.meek.com.cn/" target="_blank">
+							云盘万能钥匙 - 自动识别百度网盘提取密码						</a>
+					</li>
+										<li class="mb-1 small line-height-2">
+						<a href="https://vol.moe/" target="_blank">
+							Vol.moe漫画 - Kindle漫画						</a>
+					</li>
+										<li class="mb-1 small line-height-2">
+						<a href="https://chongbuluo.com/" target="_blank">
+							虫部落 - 让搜索更简单						</a>
+					</li>
+										<li class="mb-1 small line-height-2">
+						<a href="https://book.douban.com" target="_blank">
+							豆瓣读书						</a>
+					</li>
+									</ul>
+			</div>
+		</div>
+		
+	</div>
+</div>
+
+
+
+				
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+				
+		</div>
+	</main>
+	
+	
+	
+	
+<footer class="text-muted small bg-dark py-4 mt-3" id="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				
+				Theme by <a href="https://obook.cc/" target="_blank" class="text-muted"><b>Obook.cc </b></a><span>- 偶遇小驻，发现好书</span>
+				
+			</div>
+			<div class="col text-right">
+				
+				<!-- Processed: <b>0.026</b>, SQL: <b>56</b> -->
+				<a href="about.htm" target="_blank">关于本站</a>&nbsp;|&nbsp;
+<a href="/cdn-cgi/l/email-protection#fd9c99909493bd929f929296d39e9e" target="_blank" _href="mailto:admin@obook.cc">联系我们</a>&nbsp;|&nbsp;
+<a href="sitemap.htm" target="_blank">网站地图 </a>&nbsp;|&nbsp;
+<a href="disclaimer.htm" target="_blank">版权声明</a>
+			</div>
+		</div>
+	</div>
+
+</footer>	
+	<div class="position-fixed w-100 header_fiexd bottom-nav" style="width: 100%; height: 50px; bottom: 0; z-index: 2; background: #fafafa;">
+    <div class="row mx-0 text-center align-items-center" style="height: 50px;">
+        <div class="nav-width col">
+            <a href="./">
+                <i class="icon icon-home" aria-hidden="true"></i>
+                <div>
+                    首页
+                </div>
+            </a>
+        </div>
+
+        <!-- menu -->
+        <div class="menu col nav-width nav-flex">
+            <div class="nav-column"><i class="icon icon-bars" style="color: #1f4977;" aria-hidden="true"></i>
+                <div class="bt-name">板块</div>
+            </div>
+
+            <div class="new-sub">
+                <ul>
+                                            <li fid="10" data-active="fid-10">
+                            <a href="forum-10.htm"> 每日新更</a>
+                        </li>
+                                            <li fid="1" data-active="fid-1">
+                            <a href="forum-1.htm"> 电子书下载</a>
+                        </li>
+                                            <li fid="4" data-active="fid-4">
+                            <a href="forum-4.htm"> 书单荐读</a>
+                        </li>
+                                            <li fid="9" data-active="fid-9">
+                            <a href="forum-9.htm"> 书友分享</a>
+                        </li>
+                                            <li fid="2" data-active="fid-2">
+                            <a href="forum-2.htm"> 书友交流</a>
+                        </li>
+                                    </ul>
+                <div class="tiggle"></div>
+                <div class="innertiggle"></div>
+            </div>
+        </div>
+        <!-- menu end -->
+
+        <div class="nav-width col">
+            <a href="search.htm">
+                <i class="icon icon-search" aria-hidden="true"></i>
+                <div>
+                    搜索
+                </div>
+            </a>
+        </div>
+
+        <div class="nav-width col">
+            <a href="0.htm">
+                <i class="icon icon-star" aria-hidden="true"></i>
+                <div>
+                    收藏
+                </div>
+            </a>
+        </div>
+
+        <div class="nav-width col">
+            <a href="my.htm">
+                <i class="icon icon-user" aria-hidden="true"></i>
+                <div>
+                    我的
+                    
+                </div>
+            </a>
+        </div>
+
+    </div>
+</div>
+	
+	<!--[if ltg IE 9]>
+	<script>window.location = 'browser.htm';</script>
+	<![endif]-->
+	
+	
+	
+			<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="lang/zh-cn/bbs.js?1.0"></script>
+	<script src="view/js/jquery-3.1.0.js?1.0"></script>
+	<script src="view/js/popper.js?1.0"></script>
+	<script src="view/js/bootstrap.js?1.0"></script>
+	<script src="view/js/xiuno.js?1.0"></script>
+	<script src="view/js/bootstrap-plugin.js?1.0"></script>
+	<script src="view/js/async.js?1.0"></script>
+	<script src="view/js/form.js?1.0"></script>
+	<script>
+	var debug = DEBUG = 0;
+	var url_rewrite_on = 1;
+	var forumarr = {
+    "10": "每日新更",
+    "1": "电子书下载",
+    "4": "书单荐读",
+    "9": "书友分享",
+    "2": "书友交流"
+};
+	var fid = 0;
+	var uid = 54356;
+	var gid = 101;
+	xn.options.water_image_url = 'view/img/water-small.png';	// 水印图片 / watermark image
+	</script>
+	<script src="view/js/bbs.js?1.0"></script>
+	<script>
+// 主题高亮
+$('.mod-button button.hlight').on('click', function() {
+	var modtid = $('input[name="modtid"]').checked();
+	if(modtid.length == 0) return $.alert(lang.please_choose_thread);
+	var radios = xn.form_radio('hlight', {"0": "<span class=\"huux_thread_hlight_style0\">取消高亮</span>", "1": "<span class=\"huux_thread_hlight_style1\">风格一</span>","2": "<span class=\"huux_thread_hlight_style2\">风格二</span>", "3": "<span class=\"huux_thread_hlight_style3\">风格三</span>", "4": "<span class=\"huux_thread_hlight_style4\">风格四</span>", "5": "<span class=\"huux_thread_hlight_style5\">风格五</span>"});
+	$.confirm("设置主题为高亮", function() {
+		var tids = xn.implode('_', modtid);
+		var hlight = $('input[name="hlight"]').checked();
+		var postdata = {hlight: hlight};
+		$.xpost(xn.url('mod-hlight-'+tids), postdata, function(code, message) {
+			if(code != 0) return $.alert(message);
+			$.alert(message).delay(1000).location('');
+		});
+	}, {'body': '<p>'+"高亮风格"+'：'+radios+'</p>'});
+})
+</script>
+
+
+	
+</body>
+<div id = "popup_text" style = "display: none;">百度网盘近期整顿，多数电子书已失效<br>
+<hr />
+记住我们的域名【obook.cc】加入收藏防迷路。</div>
+<script src="plugin/nciaer_popup/layer/layer.js"></script>
+<script>
+    if(!$.cookie('nciaer_popup')) {
+        layer.open({
+            type: 0,
+            title: "公告",
+            content: $('#popup_text').html(),
+            skin: '',
+            btn: "<span style = 'color: #FFF;'>知道了</span>",
+            yes: function (index) {
+                layer.close(index);
+
+                                    $.cookie('nciaer_popup', 1);
+                
+            },
+            closeBtn: 0,
+            time: 0,
+            anim: "0",
+        });
+    }
+
+</script>
+
+</html>
+
+
+
+
+<script type="text/javascript">
+$(function() {
+    setTimeout(function() {
+        $.require('https://www.google-analytics.com/ga.js', function() {
+            try {
+                var pageTracker = _gat._getTracker("UA-9784446-1");
+                pageTracker._trackPageview();
+            } catch (err) {}
+        });
+    }, 1000);
+    setTimeout(function() {
+        $(".bbs_home_page_three_col .small_logo").each(function(index, element) {
+            if ($(element).children("a").length == 0) {
+                $(".bbs_home_page_three_col .bbs_home_page_row_div").eq(index).children('div:first-child').removeClass("col-lg-8").addClass("col-lg-9");
+                $(".bbs_home_page_three_col .bbs_home_page_row_div").eq(index).children('div:last-child').removeClass("col-lg-4").addClass("col-lg-3");
+                $(".bbs_home_page_three_col .bbs_home_page_row_div").eq(index).children('div:first-child').children("span").css("width", "19rem");
+            }
+        })
+    }, 2000);
+    if (self != top) {
+        $('#header').hide();
+        $('#nav2').hide();
+        $('#footer').hide();
+    }
+     // 隐藏
+    var new_p = 0, start_scrollTop = 0;
+        $(window).scroll(function(e){  
+                new_p = $(this).scrollTop();  
+                   
+                if(start_scrollTop < new_p) {//下滚  
+                    $('.header_fiexd').css("display","none");
+                } else {//上滚  
+                    $('.header_fiexd').css("display","block");
+                }  
+                setTimeout(function(){start_scrollTop = new_p;},0);         
+        });
+     
+    // 隐藏
+    $(window).scroll(function() {
+        if ($(window).scrollTop() >= 500) {
+            $('.act_go_top').fadeIn(300);
+        } else {
+            $('.act_go_top').fadeOut(300);
+        }
+    });
+    $('.act_go_top').click(function() {
+        $('html,body').animate({
+            scrollTop: '0px'
+        }, 100);
+    });
+    var m1 = 0;     // 滚动的值
+    var m2 = 0;     // 对比时间的值
+    var timer = null;
+    document.onscroll = function() {
+        clearTimeout(timer) // 每次滚动前 清除一次
+        timer = setTimeout(Data, 2000);
+        m1 = document.documentElement.scrollTop || document.body.scrollTop;
+    }
+    function Data() {
+        m2 = document.documentElement.scrollTop || document.body.scrollTop;
+        if(m2 == m1){
+            $('.act_go_top').fadeOut(300);
+        }
+    }
+});
+
+
+
+//弹出垂直菜单
+$(".menu").click(function() {
+    if ($(this).hasClass("cura")) {
+        $(".new-sub").hide(); //当前菜单下的二级菜单隐藏
+        $(".menu").removeClass("cura"); //同一级的菜单项
+    } else {
+        $(".menu").removeClass("cura"); //移除所有的样式
+        $(this).addClass("cura"); //给当前菜单添加特定样式
+        $(".new-sub").slideUp("fast"); //隐藏所有的二级菜单
+        $(".new-sub").slideDown("fast"); //展示当前的二级菜单
+    }
+});
+
+
+
+</script>
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-147556583-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-147556583-1');
+</script>
+
+
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WNM567F"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+
+<meta name="sogou_site_verification" content="yNjtGAmugv"/>
+
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WNM567F');</script>
+<!-- End Google Tag Manager -->
+
+
+
+
+
+
+
+<script>
+$('li[data-active="fid-0"]').addClass('active');
+</script>
+
+<script>
+jsearch_form = $('#search_form');
+jsearch_form.on('submit', function() {
+	var keyword = jsearch_form.find('input[name="keyword"]').val();
+	var url = xn.url('search-'+xn.urlencode(keyword));
+	window.location = url;
+	return false;
+});
+</script>
