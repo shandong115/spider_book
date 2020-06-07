@@ -3,12 +3,80 @@ import ast
 import pymysql
 import traceback
 from my_util import get_now_time
+import time
 
 host 		= 'localhost'
 database 	= 'bookdb'
 user 		= 'dayou'
 passwd 		= 'asdasd321321'
-
+def print_mysql_version():
+	# 打开数据库连接
+	db = pymysql.connect(host, user, passwd, database )
+	 
+	# 使用 cursor() 方法创建一个游标对象 cursor
+	cursor = db.cursor()
+	 
+	# 使用 execute()  方法执行 SQL 查询 
+	cursor.execute("SELECT VERSION()")
+	 
+	# 使用 fetchone() 方法获取单条数据.
+	data = cursor.fetchone()
+	 
+	print ("Database version : %s " % data)
+	 
+	# 关闭数据库连接
+	cursor.close()
+	db.close()
+	
+def update_bookName():
+	connection  = pymysql.connect(host, user, passwd, database )
+	#cursor = connection.cursor()
+	#str1='（epub+mobi+pdf）'
+	#str1='（epub+mobi）'
+	#str1='（epub+mobi+azw3）'
+	#str1='（epub+mobi+azw3+pdf）'
+	#str1='（epub'
+	#str1='（azw3'
+	#str1='epub+'
+	#str1='（mobi+'
+	#str1=' pdf'
+	str1='（pdf）'
+	sql = "SELECT book_id, book_name FROM book_info where book_name like '%s%s%s'"%('%',str1,'%')
+	print(sql)
+	i = 0
+	try:
+		with connection.cursor() as cursor:
+			cursor.execute(sql)
+			books = cursor.fetchall()
+			print(str(len(books)))
+			for book in books:
+				book_id = book[0]
+				book_name = book[1]
+				index = book_name.find(str1)
+				if(index>0):
+					book_name=book_name[:index]
+					b_type=book_name[index:]
+					print ("book_id:%d,book_new_name=%s" % (book_id,book_name))
+					sql2 = "UPDATE book_info SET book_name = '%s', b_type='%s' WHERE book_id = %d" % (book_name,str1,book_id)
+					#print(sql2)
+					try:
+						cursor.execute(sql2)
+						i=i+1
+						if(i%10 == 0):
+							connection.commit()
+							print('commit ok:'+str(i))
+							sleep(2)
+					except:
+						print('update err...')
+						connection.commit()
+					#break
+	except:
+		print (" fetch data Error: ...")
+	
+	connection.commit()
+	connection.close()
+	
+	
 def get_sql_str():
 	sql_str = "insert into book_info (book_id,book_name,book_type,ebook_type,img_path,book_href,read_num,is_ok,create_date)\
 			values(%s, %s, %s, %s, %s, %s, %s, %s, %s)"
@@ -94,11 +162,44 @@ def data_load(input_file_name):
 	conn.commit()
 	cursor.close()
 	conn.close()
-
+	
+def update_book_meta_remark():
+	connection  = pymysql.connect(host, user, passwd, database )
+	i=0
+	try:
+		with connection.cursor() as cursor:
+			print('connect ok...')
+			with open("C:\\Users\\dayou\\Desktop\\11.csv",'r') as ff:
+				print('open ok ...')
+				line = ff.readline()
+				print(line)
+				while(len(line)>2):
+					index=line.find(',')
+					id1 = line[:index]
+					id2 = line[index+1:-1]
+					sql = "UPDATE book_meta SET remark = '%s' WHERE book_id = %s" % (id2,int(id1))
+					#print(sql)
+					cursor.execute(sql)
+					i=i+1
+					if(i%100 == 0):
+						connection.commit()
+						print('commit ok:'+str(i))
+						time.sleep(1)
+					#break;
+					line=ff.readline()
+				connection.commit()
+	except:
+		print (" fetch data Error: ...")
+	
+	connection.commit()
+	connection.close()
+	
 if __name__ == '__main__':
+	update_book_meta_remark()
+	#update_bookName()
 	#print(get_book_id('thread-14634.htm'))
 	#print(get_sql_str())
 	
 	#data_load('obook.txt')
-	
-	data_load(sys.argv[1])
+	#data_load(sys.argv[1])
+	#print_mysql_version()
