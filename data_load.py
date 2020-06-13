@@ -5,10 +5,11 @@ import pymysql
 import traceback
 from my_util import get_now_time
 import time
+from os.path import getsize
 #from pypinyin import lazy_pinyin, Style
 #import pypinyin
 
-host 		= 'localhost'
+host 		= '192.168.31.42'
 database 	= 'bookdb'
 user 		= 'dayou'
 passwd 		= 'asdasd321321'
@@ -30,7 +31,46 @@ def print_mysql_version():
 	# 关闭数据库连接
 	cursor.close()
 	db.close()
-
+	
+def update_book_size():
+	dir_path = "E:\\workplace\\python\\python-project\\book\\"
+	connection  = pymysql.connect(host, user, passwd, database )
+	sql = "SELECT book_id, name FROM book_meta where book_id<6200"
+	print(sql)
+	i=0
+	try:
+		with connection.cursor() as cursor:
+			cursor.execute(sql)
+			books = cursor.fetchall()
+			print(str(len(books)))
+			for book in books:
+				book_id = book[0]
+				book_name = book[1]
+				#文件大小
+				file_name = dir_path + book_name + '.epub'
+				try:
+					fielsize = getsize(file_name)
+					sql2 = "UPDATE book_meta SET size = %d WHERE book_id = %d" % (fielsize,book_id)
+					#print(sql2)
+					cursor.execute(sql2)
+					i=i+1
+					if(i%100 == 0):
+						connection.commit()
+						print('commit ok:'+str(i))
+						time.sleep(2)
+				except Exception as e:
+					print(e)
+					print(file_name + ' getsize fail.................\r\n')
+					connection.commit()
+				#else:
+					#print(file_name + 'update size success: ' + str(fielsize) + '\r\n')	
+				#break
+		connection.commit()
+	except:
+		print ("db operate Error: ...")
+	connection.close()
+	
+	
 def update_book_ncode():
 	connection  = pymysql.connect(host, user, passwd, database )
 	sql = "SELECT book_id, book_name FROM book_meta where book_id>6199 and book_id<6299"
@@ -47,7 +87,7 @@ def update_book_ncode():
 				try:
 					os.rename(book_name+'.epub', book_id+'.epub')
 				except Exception as e:
-					print e
+					print(e)
 					print(book_name + ' rename fail.................\r\n')
 				else:
 					print(book_name + 'rename success\r\n')	
@@ -224,7 +264,8 @@ def update_book_meta_remark():
 	connection.close()
 	
 if __name__ == '__main__':
-	update_book_meta_remark()
+	update_book_size()
+	#update_book_meta_remark()
 	#update_bookName()
 	#print(get_book_id('thread-14634.htm'))
 	#print(get_sql_str())
