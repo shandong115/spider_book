@@ -9,6 +9,8 @@ from requests.exceptions import RequestException
 from bs4 import BeautifulSoup
 from lxml import etree
 import time
+from pypinyin import lazy_pinyin, Style
+import pypinyin
 
 def parse_page_one_book(html):
 	book_dict = {}
@@ -123,9 +125,18 @@ def get_file_index_inpath(path):
 def get_now_date():
 	return time.strftime("%Y%m%d", time.localtime())
 	
+def get_file_name_first_letter(path):
+	files = os.listdir(path)
+	values=[]
+	for file in files:
+		print(file)
+		first_letters=""
+		first_letters=first_letters+"".join(lazy_pinyin(file,style=Style.FIRST_LETTER, errors='ignore'))
+		print(first_letters)
+		break
 
-#if __name__ == '__main__':
-
+if __name__ == '__main__':
+	get_file_name_first_letter("E:\\workplace\\python\\python-project\\book")
 	#print(get_now_date())
 #	with open('thread-7774.htm', 'r', encoding='utf-8') as fp:
 #		parse_page_one_book(fp.read())

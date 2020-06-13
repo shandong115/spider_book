@@ -1,9 +1,12 @@
 import sys
+import os
 import ast
 import pymysql
 import traceback
 from my_util import get_now_time
 import time
+#from pypinyin import lazy_pinyin, Style
+#import pypinyin
 
 host 		= 'localhost'
 database 	= 'bookdb'
@@ -27,7 +30,33 @@ def print_mysql_version():
 	# 关闭数据库连接
 	cursor.close()
 	db.close()
-	
+
+def update_book_ncode():
+	connection  = pymysql.connect(host, user, passwd, database )
+	sql = "SELECT book_id, book_name FROM book_meta where book_id>6199 and book_id<6299"
+	print(sql)
+	try:
+		with connection.cursor() as cursor:
+			cursor.execute(sql)
+			books = cursor.fetchall()
+			print(str(len(books)))
+			for book in books:
+				book_id = book[0]
+				book_name = book[1]
+				#文件重命名
+				try:
+					os.rename(book_name+'.epub', book_id+'.epub')
+				except Exception as e:
+					print e
+					print(book_name + ' rename fail.................\r\n')
+				else:
+					print(book_name + 'rename success\r\n')	
+				break
+	except:
+		print ("db operate Error: ...")
+
+	connection.close()
+			
 def update_bookName():
 	connection  = pymysql.connect(host, user, passwd, database )
 	#cursor = connection.cursor()
@@ -65,7 +94,7 @@ def update_bookName():
 						if(i%10 == 0):
 							connection.commit()
 							print('commit ok:'+str(i))
-							sleep(2)
+							time.sleep(2)
 					except:
 						print('update err...')
 						connection.commit()
@@ -75,7 +104,7 @@ def update_bookName():
 	
 	connection.commit()
 	connection.close()
-	
+
 	
 def get_sql_str():
 	sql_str = "insert into book_info (book_id,book_name,book_type,ebook_type,img_path,book_href,read_num,is_ok,create_date)\
