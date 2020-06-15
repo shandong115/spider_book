@@ -33,9 +33,10 @@ def print_mysql_version():
 	db.close()
 	
 def update_book_size():
-	dir_path = "E:\\workplace\\python\\python-project\\book\\"
+	#dir_path = "E:\\workplace\\python\\python-project\\book\\"
+	dir_path = "D:\\book\\epub_number\\"
 	connection  = pymysql.connect(host, user, passwd, database )
-	sql = "SELECT book_id, name FROM book_meta where book_id<6200"
+	sql = "SELECT book_id, name FROM book_meta where book_id>=6200"
 	print(sql)
 	i=0
 	try:

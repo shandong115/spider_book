@@ -20,7 +20,44 @@ def printVersion():
 
     db.close()
 
+def update_book_size():
 
+	sql = "SELECT book_id, name FROM book_meta where book_id>6199"
+    print(sql)
+
+    db = MySQLdb.connect(host=host, user=user, passwd=passwd, db=database, charset = 'utf8')
+    cursor = db.cursor()
+    cursor.execute(sql)
+    books = cursor.fetchall()
+
+	dir_path = "/usr/share/nginx/html/epub3/"
+
+	print(str(len(books)))
+	for book in books:
+		book_id = book[0]
+		book_name = book[1]
+		#文件大小
+		file_name = dir_path + str(book_id) + '.epub'
+		try:
+			fielsize = getsize(file_name)
+			sql2 = "UPDATE book_meta SET size = %d WHERE book_id = %d" % (fielsize,book_id)
+			print(sql2)
+			cursor.execute(sql2)
+			i=i+1
+			if(i%10 == 0):
+				connection.commit()
+				print('commit ok:'+str(i))
+				time.sleep(2)
+		except Exception as e:
+			print(e)
+			print(file_name + ' getsize fail.................\r\n')
+			connection.commit()
+		else:
+			print(file_name + 'update size success: ' + str(fielsize) + '\r\n')	
+		break
+	connection.commit()
+	db.close()
+	
 def update_book_name():
 
     sql = "SELECT book_id, name FROM book_meta where book_id>6199 and book_id<6399"
