@@ -1,4 +1,3 @@
-#python2.6.6 192.168.31.42环境
 import MySQLdb
 import os
 
@@ -23,7 +22,7 @@ def printVersion():
 def update_book_size():
 
 	sql = "SELECT book_id, name FROM book_meta where book_id>6199"
-    print(sql)
+	print(sql)
 
     db = MySQLdb.connect(host=host, user=user, passwd=passwd, db=database, charset = 'utf8')
     cursor = db.cursor()
@@ -36,7 +35,7 @@ def update_book_size():
 	for book in books:
 		book_id = book[0]
 		book_name = book[1]
-		#文件大小
+
 		file_name = dir_path + str(book_id) + '.epub'
 		try:
 			fielsize = getsize(file_name)
