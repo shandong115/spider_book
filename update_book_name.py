@@ -85,4 +85,5 @@ def update_book_name():
 
 if __name__ == '__main__':
     printVersion()
-    update_book_name()
+	update_book_size()
+    #update_book_name()
