@@ -31,7 +31,7 @@ def update_book_size():
     books = cursor.fetchall()
 
     dir_path = "/usr/share/nginx/html/epub3/"
-
+    i=0
     print(str(len(books)))
     for book in books:
         book_id = book[0]
@@ -45,17 +45,17 @@ def update_book_size():
             cursor.execute(sql2)
             i=i+1
             if(i%10 == 0):
-                connection.commit()
+                db.commit()
                 print('commit ok:'+str(i))
                 time.sleep(2)
         except Exception as e:
             print(e)
             print(file_name + ' getsize fail.................\r\n')
-            connection.commit()
+            db.commit()
         else:
             print(file_name + 'update size success: ' + str(fielsize) + '\r\n')    
         break
-    connection.commit()
+    db.commit()
     db.close()
     
 def update_book_name():
