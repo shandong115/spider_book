@@ -52,9 +52,9 @@ def update_book_size():
             print(e)
             print(file_name + ' getsize fail.................\r\n')
             db.commit()
-        else:
-            print(file_name + 'update size success: ' + str(fielsize) + '\r\n')    
-        break
+        #else:
+            #print(file_name + 'update size success: ' + str(fielsize) + '\r\n')    
+        #break
     db.commit()
     db.close()
     
