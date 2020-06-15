@@ -1,5 +1,6 @@
 import MySQLdb
 import os
+from os.path import getsize
 
 host = "127.0.0.1"
 user = "dayou"
