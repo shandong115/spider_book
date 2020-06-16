@@ -2,6 +2,7 @@ import MySQLdb
 import os
 from os.path import getsize
 import time
+import io
 
 host = "127.0.0.1"
 user = "dayou"
@@ -26,7 +27,7 @@ def get_book_size():
     dir_path = "/home/zhaodan/tmp/book/"
     books=os.listdir(dir_path)
     i=0
-    with open('filesize.txt',mode='w',encoding='utf-8') as ff:
+    with io.open('filesize.txt', mode='w') as ff:
         for book in books:
             try:
                 filesize = getsize(dir_path+book)
@@ -37,8 +38,8 @@ def get_book_size():
                     print('have dealed:'+str(i))
             except Exception as e:
                 print(e)
-                print(file_name + ' getsize fail.................\r\n')
-            break;
+                print(book + ' getsize fail.................\r\n')
+            #break;
 
     
     
