@@ -83,7 +83,7 @@ def update_book_size():
     
 def update_book_name():
 
-    sql = "SELECT book_id, name FROM book_meta where book_id>6199 and book_id<6399"
+    sql = "SELECT book_id, name FROM book_meta where book_id<6200"
     print(sql)
 
     db = MySQLdb.connect(host=host, user=user, passwd=passwd, db=database, charset = 'utf8')
@@ -93,21 +93,22 @@ def update_book_name():
     db.close()
 
     for book in books:
-     #   print('book id: ' + str(book[0]))
-     #   print('book name: ' + book[1])
+        print('book id: ' + str(book[0]))
+        print('book name: ' + book[1])
         try:
             os.rename(book[1]+'.epub', str(book[0])+'.epub')
         except Exception as e:
             print e
             print(str(book[0]) + ' rename fail.................\r\n')
         else:
-            print(str(book[0]) + 'rename success\r\n') 
+            print(str(book[0]) + 'rename success\r\n')
+        break
 
     print("books num: "+str(len(books)))
 
 
 if __name__ == '__main__':
     printVersion()
-    get_book_size()
+    #get_book_size()
     #update_book_size()
-    #update_book_name()
+    update_book_name()
