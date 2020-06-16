@@ -1,6 +1,7 @@
 import MySQLdb
 import os
 from os.path import getsize
+import time
 
 host = "127.0.0.1"
 user = "dayou"
@@ -19,7 +20,28 @@ def printVersion():
     print("database version : %s" %data)
 
     db.close()
+    
+def get_book_size():
 
+    dir_path = "/home/zhaodan/tmp/book/"
+    books=os.listdir(dir_path)
+    i=0
+    with open('filesize.txt',mode='w',encoding='utf-8') as ff:
+        for book in books:
+            try:
+                filesize = getsize(dir_path+book)
+                msg = book+'|'+str(filesize)+'\n'
+                ff.write(msg)
+                i=i+1
+                if(i%100 == 0):                    
+                    print('have dealed:'+str(i))
+            except Exception as e:
+                print(e)
+                print(file_name + ' getsize fail.................\r\n')
+            break;
+
+    
+    
 def update_book_size():
 
     sql = "SELECT book_id, name FROM book_meta where book_id>6199"
@@ -85,5 +107,6 @@ def update_book_name():
 
 if __name__ == '__main__':
     printVersion()
-    update_book_size()
+    get_book_size()
+    #update_book_size()
     #update_book_name()
