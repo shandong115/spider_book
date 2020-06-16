@@ -27,7 +27,7 @@ def get_book_size():
     dir_path = "/home/zhaodan/tmp/book/"
     books=os.listdir(dir_path)
     i=0
-    with io.open('filesize.txt', mode='w') as ff:
+    with io.open('filesize.txt', mode='wb') as ff:
         for book in books:
             try:
                 filesize = getsize(dir_path+book)

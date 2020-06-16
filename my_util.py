@@ -1,4 +1,4 @@
-import os
+import os, shutil
 import datetime
 import requests
 import brotli
@@ -11,6 +11,8 @@ from lxml import etree
 import time
 from pypinyin import lazy_pinyin, Style
 import pypinyin
+from os.path import getsize
+
 
 def parse_page_one_book(html):
 	book_dict = {}
@@ -135,8 +137,51 @@ def get_file_name_first_letter(path):
 		print(first_letters)
 		break
 
+def compare_files():
+	path = "D:\\book\\epub_book\\"
+	path2 = "D:\\book\\wrong\\put\\"
+	books = os.listdir(path)
+	print("books num: "+str(len(books)))
+	wrong=[]
+	right = 0
+	unright = 0
+	noput = 0
+	for book in books:
+		book_size1 = getsize(path+book)
+		flag = -1
+		with open('filesize.txt', mode='r') as f:
+			line = f.readline()
+			while(line):
+				book_name = line[:line.find('|')]
+				if(book == book_name):
+					book_size2 = int(line[line.find('|')+1:])
+					if(book_size1 == int(book_size2)):
+						#print(book + " has put! size: " + str(book_size1))
+						flag = 0
+						right=right+1
+						break
+					else:
+						print(book + " put wrong size1: " + str(book_size1) + "size2: " + str(book_size2))
+						wrong.append(book)
+						unright=unright+1
+						flag = 1
+						#shutil.copy(path+book, path2)
+						break
+				line = f.readline()
+			if(flag == -1):
+				noput=noput+1
+				#print(book + " hasnt put")
+				#shutil.copy(path+book, path2)
+	for w in wrong:
+		print(w)
+	print("noput: "+str(noput))
+	print("right: "+str(right))
+	print("unright: "+str(unright))
+
+
 if __name__ == '__main__':
-	get_file_name_first_letter("E:\\workplace\\python\\python-project\\book")
+	compare_files()
+	#get_file_name_first_letter("E:\\workplace\\python\\python-project\\book")
 	#print(get_now_date())
 #	with open('thread-7774.htm', 'r', encoding='utf-8') as fp:
 #		parse_page_one_book(fp.read())

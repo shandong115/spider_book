@@ -71,10 +71,9 @@ def update_book_size():
 		print ("db operate Error: ...")
 	connection.close()
 	
-	
 def update_book_ncode():
 	connection  = pymysql.connect(host, user, passwd, database )
-	sql = "SELECT book_id, book_name FROM book_meta where book_id>6199 and book_id<6299"
+	sql = "SELECT book_id, book_name FROM book_meta where book_id<6200"
 	print(sql)
 	try:
 		with connection.cursor() as cursor:
@@ -97,6 +96,48 @@ def update_book_ncode():
 		print ("db operate Error: ...")
 
 	connection.close()
+	
+def get_book_id_from_db(book):
+
+	sql = "SELECT book_id  FROM book_meta where name='%s'"%(book)
+	#print(sql)
+	connection  = pymysql.connect(host, user, passwd, database )
+	try:
+		with connection.cursor() as cursor:
+			cursor.execute(sql)
+			(book_id,) = cursor.fetchone()
+			
+			#print("book: "+book+", id: "+str(book_id))
+			
+			connection.close()
+			return book_id
+			
+	except:
+		print ("db operate Error: ...")
+
+	
+	
+def update_book_ncode2():
+	
+	path = "D:\\book\\wrong\\put\\"
+	books = os.listdir(path)
+	
+	print(str(len(books)))
+	for book in books:
+		book_id = get_book_id_from_db(book[:book.find('.epub')])
+		if(len(str(book_id))<=0):
+			print(book+" get id error!!!!!!!!!!!!!")
+			continue
+		#文件重命名
+		try:
+			os.rename(path+book, path+str(book_id)+'.epub')
+		except Exception as e:
+			print(e)
+			print(book + ' rename fail.................\r\n')
+		#else:
+			#print(book + 'rename success\r\n')	
+		#break
+
 			
 def update_bookName():
 	connection  = pymysql.connect(host, user, passwd, database )
@@ -265,7 +306,9 @@ def update_book_meta_remark():
 	connection.close()
 	
 if __name__ == '__main__':
-	update_book_size()
+	update_book_ncode()
+	#update_book_ncode2()
+	#update_book_size()
 	#update_book_meta_remark()
 	#update_bookName()
 	#print(get_book_id('thread-14634.htm'))
