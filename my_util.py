@@ -9,8 +9,8 @@ from requests.exceptions import RequestException
 from bs4 import BeautifulSoup
 from lxml import etree
 import time
-from pypinyin import lazy_pinyin, Style
-import pypinyin
+#from pypinyin import lazy_pinyin, Style
+#import pypinyin
 from os.path import getsize
 
 
