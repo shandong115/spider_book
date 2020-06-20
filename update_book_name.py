@@ -4,13 +4,16 @@ from os.path import getsize
 import time
 import io
 
-host = "127.0.0.1"
-user = "dayou"
+#host = "127.0.0.1"
+host = "localhost"
+#user = "dayou"
+user = "root"
 passwd = "asdasd321321"
 database = "bookdb"
+port=9874
 
 def printVersion():
-    db = MySQLdb.connect(host=host, user=user, passwd=passwd, db=database, charset = 'utf8')
+    db = MySQLdb.connect(host=host, port=port, user=user, passwd=passwd, db=database, charset = 'utf8')
 
     cursor = db.cursor()
 
@@ -98,7 +101,7 @@ def update_book_name():
         try:
             os.rename(book[1]+'.epub', str(book[0])+'.epub')
         except Exception as e:
-            print e
+            print(e)
             print(str(book[0]) + ' rename fail.................\r\n')
         else:
             print(str(book[0]) + 'rename success\r\n')
