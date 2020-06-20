@@ -83,7 +83,7 @@ def update_book_size():
     
 def update_book_name():
 
-    sql = "SELECT book_id, name FROM book_meta where book_id<6200"
+    sql = "SELECT book_id, name FROM book_meta where size<1024*1024*10"
     print(sql)
 
     db = MySQLdb.connect(host=host, user=user, passwd=passwd, db=database, charset = 'utf8')
