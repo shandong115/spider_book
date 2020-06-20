@@ -32,6 +32,31 @@ def print_mysql_version():
 	cursor.close()
 	db.close()
 	
+def update_book_name():
+
+    sql = "SELECT book_id, name FROM book_meta where size<1024*1024*10"
+    print(sql)
+
+    db = pymysql.connect(host, user, passwd, database)
+    cursor = db.cursor()
+    cursor.execute(sql)
+    books = cursor.fetchall()
+    db.close()
+
+    for book in books:
+        print('book id: ' + str(book[0]))
+        print('book name: ' + book[1])
+        try:
+            os.rename(book[1]+'.epub', str(book[0])+'.epub')
+        except Exception as e:
+            print e
+            print(str(book[0]) + ' rename fail.................\r\n')
+        else:
+            print(str(book[0]) + 'rename success\r\n')
+        break
+
+    print("books num: "+str(len(books)))
+	
 def update_book_size():
 	#dir_path = "E:\\workplace\\python\\python-project\\book\\"
 	dir_path = "D:\\book\\epub_number\\"
@@ -306,7 +331,8 @@ def update_book_meta_remark():
 	connection.close()
 	
 if __name__ == '__main__':
-	update_book_ncode()
+	update_book_name()
+	#update_book_ncode()
 	#update_book_ncode2()
 	#update_book_size()
 	#update_book_meta_remark()
