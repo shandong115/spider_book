@@ -1,4 +1,4 @@
-import os, shutil
+import os, shutil, sys
 import datetime
 import requests
 import brotli
@@ -178,9 +178,71 @@ def compare_files():
 	print("right: "+str(right))
 	print("unright: "+str(unright))
 
+def get_one_page2(url):
+	headers = {
+		'Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+		'Accept-Encoding':'gzip, deflate',
+		'Accept-Language':'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+		'Cache-Control':'max-age=0',
+		'Connection':'keep-alive',
+		#'Cookie':'Hm_lvt_82517de1aba077f27b656b61d72a310c=1597304171,1597629867,1597801170,1597801289; UM_distinctid=173e6bf74226a-017c2a30776912-15367840-100200-173e6bf742365b; CNZZDATA1267152390=411271213-1597299572-null%7C1597982744; Hm_lpvt_82517de1aba077f27b656b61d72a310c=1597987910; xl_scw=4b13c13306726277e04c7bca27e4970437779f7670050ee1abb046eea1317b6ea%3A2%3A%7Bi%3A0%3Bs%3A6%3A%22xl_scw%22%3Bi%3A1%3Bs%3A81%3A%22%E6%89%93%E5%8E%8B+%E5%85%A8%E7%90%83+%E5%8F%AF%E8%83%BD+%E7%BD%91%E7%BB%9C+%E8%84%B1%E9%92%A9+%E9%9C%B8%E6%9D%83%E4%B8%BB%E4%B9%89+%E5%AF%BC%E5%BC%B9+%E8%88%AA%E6%AF%8D+%E4%BE%9B%E5%BA%94%E5%95%86+%E7%BE%8E%E5%9B%BD%E5%8C%96%22%3B%7D',
+		#'Host':url,	
+		#'User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.113 Safari/537.36',
+		'User-Agent':'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:62.0) Gecko/20100101 Firefox/62.0'
+		}
+	
+	print('url: '+url)
+	try:
+		response = requests.get(url, headers=headers,timeout=30)
+		if not response.status_code == requests.codes.ok:
+			print('Request Not Successfully: '+url + ',status_code:'+str(response.status_code)+'->'+dict_codes[response.status_code])
+			return None
+		print('Request Successfully: ' + url)
+	except RequestException as e:
+		print('Request Exception!'+url)
+		traceback.print_exc()
+		return None
+		
+	key = 'Content-Encoding'
+	if(key in response.headers and response.headers['Content-Encoding'] == 'br'):
+		data = brotli.decompress(response.content)
+		data1 = data.decode('utf-8')
+		return(data1)
+	else:
+		return(response.text)
 
-if __name__ == '__main__':
-	compare_files()
+
+def parse_page(str):
+	html = etree.HTML(str, etree.HTMLParser())
+	
+	title 		= html.xpath('/html/body/div[2]/div[1]/div[2]/div[1]/div/h1/span/text()')
+	
+	contains 	= html.xpath('/html/body/div[2]/div[1]/div[2]/div[1]/div/div[4]/p/text()')
+
+	date = datetime.datetime.now().strftime('%Y%m%d')
+	article_path = "F:\\zhanlang\\"+date[2:]+"\\"+title[0].strip()+"\\"
+	mkdirlambda =lambda x: os.makedirs(x) if not os.path.exists(x)  else True  # 目录是否存在,不存在则创建
+	mkdirlambda(article_path)
+	with open(article_path+'doc.txt', 'a', encoding='utf-8') as fp:
+		for l in contains:
+			if(l.find('责编')<0):
+				fp.writelines(l.strip())
+				fp.write('\n')
+		
+	
+	
+	
+#if __name__ == '__main__':
+	#for i in range(8):
+		#html=get_one_page2('http://www.xilu.com/20200821/1000010001142477_'+str(i+1)+'.html')
+		#parse_page(html)
+	#with open('1.htm', 'w', encoding='utf-8') as fp:
+		#fp.write(html)
+	#with open('1.htm','r',encoding='utf-8') as fp:
+		#html=fp.read()
+		#print(html)
+		#parse_page(html)
+	#compare_files()
 	#get_file_name_first_letter("E:\\workplace\\python\\python-project\\book")
 	#print(get_now_date())
 #	with open('thread-7774.htm', 'r', encoding='utf-8') as fp:
